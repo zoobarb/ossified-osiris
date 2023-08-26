@@ -1,0 +1,18 @@
+---
+import Navbar from '../components/navbar.astro';
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Not Astro</title>
+	</head>
+	<body>
+    <Navbar />
+		<div class="mt-20 container mx-auto max-w-5xl">
+      <slot />
+    </div>
+	</body>
+</html>
